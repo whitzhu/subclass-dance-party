@@ -1,6 +1,6 @@
 var MinionDancer = function(top, left, timeBetweenSteps) {
   ClassicDancer.call(this, top, left, timeBetweenSteps);
-  this.$node = $('<span class="minion"><img src="https://s-media-cache-ak0.pinimg.com/originals/36/b1/6c/36b16cc68bbbca07f1c37183112de693.gif"></span>');
+  this.$node = $('<span><img class="minion" src="https://s-media-cache-ak0.pinimg.com/originals/36/b1/6c/36b16cc68bbbca07f1c37183112de693.gif"></span>');
 };
 
 
@@ -11,14 +11,8 @@ MinionDancer.prototype.constructor = MinionDancer;
 // so we must keep a copy of the old version of this function
 MinionDancer.prototype.step = function() {
   // call the old version of step at the beginning of any call to this new version of step
-  Dancer.prototype.step.call(this);
-  //this.slide();
-  //this.jump();
-  //ClassicDancer.prototype.slide.call(this);
-  // toggle() is a jQuery method to show/hide the <span> tag.
-  // See http://api.jquery.com/category/effects/ for this and
-  // other effects you can use on a jQuery-wrapped html tag.
-  //this.$node.toggle();
+  ClassicDancer.prototype.step.call(this);
+
 };
 
 MinionDancer.prototype.jump = function() {

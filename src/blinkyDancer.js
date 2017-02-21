@@ -1,5 +1,7 @@
 var BlinkyDancer = function(top, left, timeBetweenSteps) {
   Dancer.call(this, top, left, timeBetweenSteps);
+  this.$node = $('<span ><img class="blinky" src="http://rs1028.pbsrc.com/albums/y349/kerstinabersfelder21/received_393237594203800_zpsvoxwvzyw.gif~c200"></span>');
+
 };
 
 

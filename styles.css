@@ -12,18 +12,34 @@ body{
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
-  color: lightblue;
-}
-.title, .addDancerButton{
-  padding:5px 12px;
-  float:right;
-}
-.topbar{
-  height:32px;
-  background-color: #555;
+  color: #fff;
 }
 .title{
-  background-color: #777;
+  background-color: #fff;
+  color: grey;
+  width:100%;
+
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.btn{
+  margin: 10px;
+  padding:5px 12px;
+  border-radius: 4px;
+  background: lightblue;
+  color: #fff;
+  text-decoration: none;
+}
+.lineup{
+  background-color: red !important;
+}
+.topbar{
+  position: relative;
+  margin: auto;
+  height:52px;
+  background-color: #fff;
+  text-align: center;
 }
 .dancer{
   border:10px solid red;
